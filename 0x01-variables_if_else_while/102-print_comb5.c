@@ -1,5 +1,4 @@
-#include <stdio.h>                                                                                                                    
-#include <stdio.h>                                                                                                                    
+#include <stdio.h>                                                                                                                                                                                                                                       
 /**                                                                                                                                   
  * program that prints all possible combinations of two two-digit numbers.                                                            
  */                                                                                                                                   
