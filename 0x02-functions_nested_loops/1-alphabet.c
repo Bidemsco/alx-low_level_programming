@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-*print_alphabets - function to prints abc
-*
-*Return: 0
-*/
+ * print_alphabet - function to print abc
+ *
+ * Return: 0
+ */
 void print_alphabet(void)
 {
 	char c;
