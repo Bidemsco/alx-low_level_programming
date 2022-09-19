@@ -1,45 +1,30 @@
 #include <stdio.h>
-
 #include "main.h"
 
-
-
 /**
-
-* print_number - Prints a number
-
-* @n: The number to print
-
+*print_square - prints squares
+*@size: parameter
+*Return: returns nothing
 */
 
-
-
-void print_number(int n)
-
+void print_square(int size)
 {
+	int inc1, inc2;
 
-	unsigned int num = n;
-
-
-
-	if (n < 0)
-
+	if (size > 0)
 	{
+		for (inc1 = 0; inc1 < size; inc1++)
+		{
+			for (inc2 = 0; inc2 < (size - 1); inc2++)
+			{
+				putchar('#');
+			}
 
-		putchar('-');
-
-		num = -num;
-
+			putchar('#');
+			putchar('\n');
+		}
 	}
-
-	if (num > 9)
-
+	else
 	{
-
-		print_number(num / 10);
-
+		putchar('\n');
 	}
-
-	putchar(num % 10 + '0');
-
-}
