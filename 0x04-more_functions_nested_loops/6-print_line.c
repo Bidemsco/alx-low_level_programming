@@ -2,16 +2,21 @@
 #include "main.h"
 
 /**
-*print_line - prints a straight line
-*@n: parameter
-*Return:returns nothing
-*/
+ * puts2 - prints every other character
+ * @str: string
+ *
+ * Return: nothing
+ */
 
-void print_line(int n)
+void puts2(char *str)
 {
-	while (n-- > 0)
+	int i = 0;
+
+	while (*(str + i) != '\0')
 	{
-		putchar('_');
+		if (i % 2 == 0)
+			putchar(*(str + i));
+		i++;
 	}
-	putchar('\n');
+	putchar(10);
 }
