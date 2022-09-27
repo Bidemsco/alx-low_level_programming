@@ -1,87 +1,18 @@
-/*
- *
- *  * File: 5-strstr.c
- *
- *   * Auth: Someone who is kind
- *
- *    */
-
-
-
 #include "main.h"
 
-
-
 /**
- *
- *  * _strstr - Locates a substring.
- *
- *   * @haystack: The string to be searched.
- *
- *    * @needle: The substring to be located.
- *
- *     *
- *
- *      * Return: If the substring is located - a pointer to the beginning
- *
- *       *                                       of the located substring.
- *
- *        *         If the substring is not located - NULL.
- *
- *         */
-
-
-
-char *_strstr(char *haystack, char *needle)
-
+ * print_chessboard - Prints a chessboard.
+ * @a: The chessboard to be printed.
+ */
+void print_chessboard(char (*a)[8])
 {
+	int indx1, indx2;
 
-		int index;
-
-
-
-			if (*needle == 0)
-
-						return (haystack);
-
-
-
-				while (*haystack)
-
-						{
-
-									index = 0;
-
-
-
-											if (haystack[index] == needle[index])
-
-														{
-
-																		do {
-
-																							if (needle[index + 1] == '\0')
-
-																													return (haystack);
-
-
-
-																											index++;
-
-
-
-																														} while (haystack[index] == needle[index]);
-
-																				}
-
-
-
-													haystack++;
-
-														}
-
-
-
-					return ('\0');
-
+	for (indx1 = 0; a[indx1][7]; indx1++)
+	{
+		for (indx2 = 0; indx2 < 8; indx2++)
+			_putchar(a[indx1][indx2]);
+		
+		_putchar('\n');
+	}
 }
