@@ -21,3 +21,4 @@ int _strlen_recursion(char *s)
 			return (len);
 	}
 	return (0);
+}
