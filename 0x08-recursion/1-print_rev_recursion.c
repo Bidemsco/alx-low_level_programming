@@ -1,16 +1,19 @@
-#include "main.h"
-/**
- * _puts_recursion - prints a string followed by a newline
- * @s: the string we print
- * Return: void
+/*
+ * File: 1-print_rev_recursion.c
+ * Auth: sam
  */
-void _puts_recursion(char *s)
+
+#include "main.h"
+
+/**
+ * _print_rev_recursion - Prints a string in reverse.
+ * @s: The string to be printed.
+ */
+void _print_rev_recursion(char *s)
 {
-    if (*s)
-    {
-        _putchar(*s);
-        _puts_recursion(s + 1);
-    }
-    if (!*s)
-    _putchar('\n');
+	if (*s)
+	{
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
+	}
 }
