@@ -1,12 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdio.h>
-
-/**
-*Main.h
-*Header file containing prototypes for all functions
-*
-*/
+#include <stdlib.h>
 
 int _putchar(char c);
 void _puts_recursion(char *s);
@@ -18,9 +13,5 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
-int _sqrt(int n, int x);
-int is_prime(int n, int start);
-void check(char *s, int start, int end, int *flag);
-int wildcmp(char *s1, char *s2);
 
-#endif /*MAIN_H*/
+#endif 
